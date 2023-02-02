@@ -15,7 +15,7 @@ document.addEventListener("click", function(event) {
 });
 
 // Define the links "a, b, c, d, e"
-const links = ["a", "b", "c", "d", "e"];
+const links = ["Tree, Hedge, and Lawn Maintenance", "Enclosures and Plantings", "Patios", "Walkways", "Stairs", "Water Features", "Retaining Walls", "More"];
 links.forEach(function(link) {
   const linkElement = document.createElement("a");
   linkElement.href = "#";
