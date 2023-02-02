@@ -1,20 +1,24 @@
-var dropdown = document.querySelector(".dropdown");
-var dropdownButton = document.querySelector(".dropdown-button");
-var dropdownContent = document.querySelector(".dropdown-content");
+// Get the dropdown button and content
+const button = document.querySelector(".dropdown-button");
+const dropdownContent = document.querySelector(".dropdown-content");
 
-dropdownButton.addEventListener("click", function() {
+// Add click event listener to the button
+button.addEventListener("click", function() {
   dropdownContent.classList.toggle("show");
 });
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-button')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+// Add click event listener to the entire document
+document.addEventListener("click", function(event) {
+  if (!event.target.matches(".dropdown-button") && !event.target.closest(".dropdown-content")) {
+    dropdownContent.classList.remove("show");
   }
-};
+});
+
+// Define the links "a, b, c, d, e"
+const links = ["a", "b", "c", "d", "e"];
+links.forEach(function(link) {
+  const linkElement = document.createElement("a");
+  linkElement.href = "#";
+  linkElement.textContent = link;
+  dropdownContent.appendChild(linkElement);
+});
