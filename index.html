@@ -2,136 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
-    <style>
-      .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #006400;
-      }
-
-      .nav a {
-        text-decoration: none;
-        color: white;
-        padding: 10px 20px;
-        background-color: black;
-        border-radius: 5px;
-      }
-
-      h1 {
-        font-size: 3vw;
-      }
-
-      .dropdown {
-              position: relative;
-              display: inline-block;
-            }
-
-            .dropdown-content {
-              display: none;
-              position: absolute;
-              z-index: 1;
-              background-color: black;
-              min-width: 160px;
-              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              padding: 12px 16px;
-              border-radius: 5px;
-            }
-
-            .dropdown:hover .dropdown-content {
-              display: block;
-            }
-
-            /* Adjust the font size for larger screens */
-            @media (min-width: 768px) {
-              h1 {
-                font-size: 2em;
-              }
-            }
-            </style>
-            </head>
-            <body>
-            <div class="nav">
-            <h1>My Website</h1>
-            <div class="dropdown">
-              <a href="#">Galleries</a>
-              <div class="dropdown-content">
-                <a href="patios.html">Patios</a>
-                <a href="walkways.html">Walkways</a>
-                <a href="stairs.html">Stairs</a>
-                <a href="water-features.html">Water Features</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-                <a href="enclosures-and-plantings.html">Enclosures and Plantings</a>
-                <a href="trees-hedges-lawn-maintenance.html">Trees/Hedges/Lawn Maintenance</a>
-              </div>
-            </div>
-            </div>
-
-    </style>
+    <title>Dropdown Button</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <div class="nav">
-      <h1>Will's Way Landscaping <br>     Franklin, MA</h1>
-      <p1>Contact 555-555-5555 for a free estimate on your project or regular maintenance<br> willswaylandscap@comcast.net</p1>
-      
-    </div>
-    <style>
-      .slideshow {
-        background-color: #006400;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10% auto 0;
-        height: calc(100vh * 2/3);
-        width: 80%;
-        max-width: 80%;
-        overflow: hidden;
-        position: relative;
-        padding-bottom: 75%;
-      }
-
-      .slide {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="slideshow">
-      <div class="slide">
-        <img src="slide1.jpg" alt="Slide 1">
-      </div>
-      <div class="slide">
-        <img src="slide2.jpg" alt="Slide 2">
-      </div>
-      <div class="slide">
-        <img src="slide3.jpg" alt="Slide 3">
+    <div class="dropdown">
+      <button class="dropdown-button">Dropdown button</button>
+      <div class="dropdown-content">
+        <a href="#">a</a>
+        <a href="#">b</a>
+        <a href="#">c</a>
+        <a href="#">d</a>
+        <a href="#">e</a>
       </div>
     </div>
 
-    <script>
-      var slides = document.querySelectorAll(".slide");
-      var currentSlide = 0;
-      var slideInterval = setInterval(nextSlide, 2000);
-
-      function nextSlide() {
-        slides[currentSlide].style.display = "none";
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].style.display = "flex";
-      }
-    </script>
+    <script src="javascript.js"></script>
   </body>
 </html>
