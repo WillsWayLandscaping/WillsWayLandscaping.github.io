@@ -25,19 +25,57 @@
         font-size: 3vw;
       }
 
-      /* Adjust the font size for larger screens */
-      @media (min-width: 768px) {
-        h1 {
-          font-size: 2em;
-        }
-      }
+      .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              z-index: 1;
+              background-color: black;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              padding: 12px 16px;
+              border-radius: 5px;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            /* Adjust the font size for larger screens */
+            @media (min-width: 768px) {
+              h1 {
+                font-size: 2em;
+              }
+            }
+            </style>
+            </head>
+            <body>
+            <div class="nav">
+            <h1>My Website</h1>
+            <div class="dropdown">
+              <a href="#">Galleries</a>
+              <div class="dropdown-content">
+                <a href="patios.html">Patios</a>
+                <a href="walkways.html">Walkways</a>
+                <a href="stairs.html">Stairs</a>
+                <a href="water-features.html">Water Features</a>
+                <a href="retaining-walls.html">Retaining Walls</a>
+                <a href="enclosures-and-plantings.html">Enclosures and Plantings</a>
+                <a href="trees-hedges-lawn-maintenance.html">Trees/Hedges/Lawn Maintenance</a>
+              </div>
+            </div>
+            </div>
 
     </style>
   </head>
   <body>
     <div class="nav">
-      <h1>Will's Way Landscaping <br> near Franklin, MA</h1>
-      <p1>Contact 555-555-5555 for a free estimate on your project or regular maintenance <br> or email willswaylandscap@comcast.net</p1>
+      <h1>Will's Way Landscaping <br>     Franklin, MA</h1>
+      <p1>Contact 555-555-5555 for a free estimate on your project or regular maintenance <br> willswaylandscap@comcast.net</p1>
       <div>
         <a href="galleries.html">Galleries</a>
         <!-- Add more buttons here -->
