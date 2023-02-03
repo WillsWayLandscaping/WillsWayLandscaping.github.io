@@ -45,6 +45,15 @@ h1 {
   font-size: 3vw;
 }
 
+.carousel-item {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .slideshow {
   background-color: #006400;
   display: flex;
