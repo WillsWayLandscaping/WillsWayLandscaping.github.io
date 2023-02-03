@@ -6,7 +6,7 @@
 .dropdown-button {
   background-color: #4CAF50;
   color: white;
-  padding: 32px;
+  padding: 24px;
   font-size: 32px;
   border: none;
   cursor: pointer;
@@ -23,7 +23,8 @@
 
 .dropdown-content a {
   color: black;
-  padding: 24px 24px;
+  padding: 16px 24px;
+  font-size: 22px;
   text-decoration: none;
   display: block;
 }
