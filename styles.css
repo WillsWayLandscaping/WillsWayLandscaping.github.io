@@ -55,3 +55,52 @@ h1 {
   margin-right: auto;
   width: 50%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1171px) {
+  .responsive-image {
+    width: 45%
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  .dropdown-button {
+    padding: 3vw;
+    font-size: 3vw;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    padding: 1vw;
+    font-size: 3vw;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 3vw;
+    font-size: 3vw;
+    text-decoration: none;
+    display: block;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  .goat {
+    width: 5%
+  }
+  p {
+    font-size: 2vw;
+  }
+  footer {
+    font-size: 2vw;
+  }
+}
